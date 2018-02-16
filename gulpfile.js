@@ -1,5 +1,5 @@
 var gulp = require ('gulp');
-  gulp.task('default', ()=>{
+  gulp.task('test', ()=>{
     require('./test.js');
     console.log('Hello Gulp!')
   });
