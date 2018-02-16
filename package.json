@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/linzGithub/NodeJS#readme",
   "dependencies": {
-    "debug": "^3.1.0"
+    "debug": "^3.1.0",
+    "gulp": "^3.9.1"
   }
 }
