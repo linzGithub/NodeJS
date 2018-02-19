@@ -1,5 +1,19 @@
-var gulp = require ('gulp');
-  gulp.task('test', ()=>{
+"use strict";
+
+let gulp = require('gulp');
+let jshint = require('gulp-jshint');
+
+gulp.task('default',['jshint','test','serve']);
+
+gulp.task("jshint", ()=>{
+     return gulp.src('./*.js')
+            .pipe(jshint())
+            .pipe(jshint.reporter('default'));
+})
+.task('test', ()=>{
     require('./test.js');
     console.log('Hello Gulp!')
-  });
+})
+.task("serve",()=>{
+    require('./main.js');
+});
